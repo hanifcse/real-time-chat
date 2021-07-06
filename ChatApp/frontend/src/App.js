@@ -3,7 +3,8 @@ import io from 'socket.io-client';
 import './App.css';
 import { FaTelegramPlane } from 'react-icons/fa';
 
-const socket = io('http://localhost:7000')
+// const socket = io('http://localhost:7000')
+const socket = io('https://desolate-bayou-05682.herokuapp.com/')
 const userName = 'User ' + parseInt(Math.random() * 10)
 function App() {
   const [message, setMessage] = useState('')
